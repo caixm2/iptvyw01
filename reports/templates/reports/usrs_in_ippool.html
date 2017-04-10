@@ -1,4 +1,35 @@
 <h1>usrs_in_ippools</h1>
-{% for onerow in  rows %}
-  {{ onerow}}
+
+<form action="">
+<select name="ipnum">
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="4">4</option>
+<option value="8">8</option>
+<option value="16">16</option>
+<option value="32">32</option>
+<option value="64">64</option>
+<option value="128">128</option>
+</select>
+<select name="ipnum">
+<option value="B" selected>B</option>
+<option value="C">C</option>
+</select>
+</form>
+<table border="1">
+<tr>
+  <td>开始IP</td>
+  <td>结束IP</td>
+  <td>区局</td>
+  <td>用户数</td>
+</tr>
+{% for row in  rows %}
+  <tr>
+  {% for i in row %}
+    <td>
+    {{ i }}
+    </td>
+  {% endfor %}
+    </tr>
 {% endfor %}
+</table>

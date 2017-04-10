@@ -16,7 +16,7 @@ def call_p3a_usrs_in_ippool():
     with connection.cursor() as cursor:
         #cursor.execute("select ipstart, ipend from tnoc_usr_ippool;")
         #rows = cursor.fetchall()
-        args = (8, 'B')
+        args = (16, 'B')
         cursor.callproc("p3a_usrs_in_ippool", args)
         #for results in cursor.stored_results():
         rows = cursor.fetchall()

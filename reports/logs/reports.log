@@ -12360,3 +12360,2970 @@ DEBUG 2017-04-09 12:41:57,008 utils 7819 139864481650432 90 (0.000) SELECT @@SQL
 DEBUG 2017-04-09 12:41:57,008 utils 7819 139864481650432 90 (0.000) SELECT VERSION(); args=None
 DEBUG 2017-04-09 12:41:57,010 utils 7819 139864481650432 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-09 12:41:57' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-09 12:41:57', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
 INFO 2017-04-09 12:42:00,992 basehttp 7819 139864481650432 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 4984
+DEBUG 2017-04-10 14:08:16,512 utils 9492 139825003759360 90 (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:08:16,513 utils 9492 139825003759360 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:08:16,799 utils 9492 139825003759360 90 (0.182) SHOW FULL TABLES; args=None
+DEBUG 2017-04-10 14:08:16,868 utils 9492 139825003759360 90 (0.029) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-04-10 14:08:41,964 utils 9492 139824992147200 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:08:41,965 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:08:41,965 utils 9492 139824992147200 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:08:41,965 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:08:42,076 utils 9492 139824983754496 90 (0.109) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:08:41'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:08:41')
+DEBUG 2017-04-10 14:08:42,076 utils 9492 139824992147200 90 (0.110) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:08:41'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:08:41')
+DEBUG 2017-04-10 14:08:42,388 base 9492 139824992147200 929 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/xknight/Downloads/Django-1.10.5/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-04-10 14:08:42,393 base 9492 139824983754496 929 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/xknight/Downloads/Django-1.10.5/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-04-10 14:08:42,424 base 9492 139824992147200 929 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/xknight/Downloads/Django-1.10.5/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-04-10 14:08:42,425 base 9492 139824983754496 929 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/xknight/Downloads/Django-1.10.5/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/xknight/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-04-10 14:08:42,426 base 9492 139824992147200 152 Not Found: /favicon.ico
+WARNING 2017-04-10 14:08:42,427 base 9492 139824983754496 152 Not Found: /favicon.ico
+WARNING 2017-04-10 14:08:42,428 basehttp 9492 139824992147200 131 "GET /favicon.ico HTTP/1.1" 404 2047
+WARNING 2017-04-10 14:08:42,428 basehttp 9492 139824983754496 131 "GET /favicon.ico HTTP/1.1" 404 2047
+DEBUG 2017-04-10 14:13:08,498 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:13:08,499 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:13:08,500 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:13:08'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:13:08')
+ERROR 2017-04-10 14:13:12,362 exception 9492 139824983754496 124 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xknight/django/iptvyw01/reports/views.py", line 13, in usrs_in_ippool
+    return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
+  File "/home/xknight/Downloads/Django-1.10.5/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0], onerow[1], onerow[2]' from 'onerow[0], onerow[1], onerow[2]'
+DEBUG 2017-04-10 14:13:12,440 utils 9492 139824983754496 90 (0.001) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+ERROR 2017-04-10 14:13:12,567 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 164855
+DEBUG 2017-04-10 14:14:42,104 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:14:42,105 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:14:42,106 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:14:42'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:14:42')
+ERROR 2017-04-10 14:14:46,232 exception 9492 139824983754496 124 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xknight/django/iptvyw01/reports/views.py", line 13, in usrs_in_ippool
+    return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
+  File "/home/xknight/Downloads/Django-1.10.5/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0]' from 'onerow[0]'
+DEBUG 2017-04-10 14:14:46,277 utils 9492 139824983754496 90 (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+ERROR 2017-04-10 14:14:46,381 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 164459
+DEBUG 2017-04-10 14:15:26,719 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:15:26,720 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:15:26,721 utils 9492 139824983754496 90 (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:15:26'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:15:26')
+INFO 2017-04-10 14:15:30,548 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 4984
+DEBUG 2017-04-10 14:15:58,218 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:15:58,218 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:15:58,219 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:15:58'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:15:58')
+ERROR 2017-04-10 14:16:02,073 exception 9492 139824983754496 124 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xknight/django/iptvyw01/reports/views.py", line 13, in usrs_in_ippool
+    return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
+  File "/home/xknight/Downloads/Django-1.10.5/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0]' from 'row[0]'
+DEBUG 2017-04-10 14:16:02,134 utils 9492 139824983754496 90 (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+ERROR 2017-04-10 14:16:02,242 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 164397
+DEBUG 2017-04-10 14:18:27,849 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:18:27,849 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:18:27,850 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:18:27'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:18:27')
+ERROR 2017-04-10 14:18:31,651 exception 9492 139824983754496 124 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xknight/django/iptvyw01/reports/views.py", line 13, in usrs_in_ippool
+    return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
+  File "/home/xknight/Downloads/Django-1.10.5/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[1]' from 'row[1]'
+DEBUG 2017-04-10 14:18:31,698 utils 9492 139824983754496 90 (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+ERROR 2017-04-10 14:18:31,807 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 164397
+DEBUG 2017-04-10 14:18:42,947 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:18:42,948 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:18:42,949 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:18:42'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:18:42')
+DEBUG 2017-04-10 14:18:42,951 utils 9492 139824983754496 90 (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+DEBUG 2017-04-10 14:18:42,953 utils 9492 139824983754496 90 (0.001) SELECT COUNT(*) AS `__count` FROM `tztesheji`; args=()
+DEBUG 2017-04-10 14:18:42,954 utils 9492 139824983754496 90 (0.000) SELECT COUNT(*) AS `__count` FROM `tztesheji`; args=()
+DEBUG 2017-04-10 14:18:42,977 utils 9492 139824983754496 90 (0.002) SELECT `tztesheji`.`nodename`, `tztesheji`.`wgname`, `tztesheji`.`epggroupname`, `tztesheji`.`sjkyll`, `tztesheji`.`sjjdll`, `tztesheji`.`sjhmsbf`, `tztesheji`.`sjepgbf`, `tztesheji`.`sjdbkj`, `tztesheji`.`nodeid`, `tztesheji`.`clusterid`, `tztesheji`.`clustername`, `tztesheji`.`OPT1`, `tztesheji`.`OPT2`, `tztesheji`.`OPT3`, `tztesheji`.`OPT4`, `tztesheji`.`OPT5`, `tztesheji`.`createtime`, `tztesheji`.`updatetime`, `tztesheji`.`deletetime`, `tztesheji`.`createowner`, `tztesheji`.`updateowner`, `tztesheji`.`deleteowner`, `tztesheji`.`deleteflag` FROM `tztesheji` ORDER BY `tztesheji`.`nodename` DESC; args=()
+DEBUG 2017-04-10 14:18:43,026 base 9492 139824983754496 929 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [errors] in 'None'
+DEBUG 2017-04-10 14:18:43,030 base 9492 139824983754496 929 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'show'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [show] in "[{'False': False, 'True': True, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f2b8aff7bf8>>, 'None': None}]"
+DEBUG 2017-04-10 14:18:43,040 base 9492 139824983754496 929 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_multipart'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_multipart] in 'None'
+DEBUG 2017-04-10 14:18:43,147 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,148 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,148 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,149 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,149 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,150 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,150 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,151 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,151 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,152 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,152 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,153 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,153 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,154 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,154 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,155 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,155 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,156 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,156 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,157 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,157 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,158 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,158 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,159 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,159 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,160 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,160 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,161 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,161 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,162 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,163 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,163 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,164 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,165 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,165 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,166 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,166 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,167 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,168 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,168 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,169 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,170 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,170 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,171 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,171 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,172 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,173 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,173 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,174 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,174 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,175 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,176 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,176 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,177 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,178 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,178 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,179 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,179 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,180 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,181 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,181 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,182 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,182 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,183 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,184 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,184 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,185 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,185 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,186 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,187 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,187 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,188 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,188 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,189 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,189 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,190 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,191 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,191 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,192 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,192 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,193 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,193 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,194 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,195 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,195 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,196 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,196 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,197 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,197 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,198 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,199 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,199 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+DEBUG 2017-04-10 14:18:43,200 base 9492 139824983754496 929 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'NoneType' object has no attribute 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'non_field_errors'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [non_field_errors] in 'None'
+INFO 2017-04-10 14:18:43,205 basehttp 9492 139824983754496 131 "GET /admin/reports/tztesheji/ HTTP/1.1" 200 79194
+DEBUG 2017-04-10 14:28:25,300 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:28:25,301 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:28:25,303 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:28:25'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:28:25')
+INFO 2017-04-10 14:28:29,152 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 5605
+DEBUG 2017-04-10 14:28:47,108 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:28:47,108 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:28:47,109 utils 9492 139824983754496 90 (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:28:47'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:28:47')
+INFO 2017-04-10 14:28:51,129 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 5398
+DEBUG 2017-04-10 14:29:57,573 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:29:57,573 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:29:57,575 utils 9492 139824983754496 90 (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:29:57'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:29:57')
+ERROR 2017-04-10 14:30:01,607 exception 9492 139824983754496 124 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/xknight/Downloads/Django-1.10.5/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/xknight/django/iptvyw01/reports/views.py", line 13, in usrs_in_ippool
+    return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
+  File "/home/xknight/Downloads/Django-1.10.5/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/defaulttags.py", line 803, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/home/xknight/Downloads/Django-1.10.5/django/template/base.py", line 584, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 2: 'for'. Looking for one of: empty, endfor.
+DEBUG 2017-04-10 14:30:01,652 utils 9492 139824983754496 90 (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+ERROR 2017-04-10 14:30:01,753 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 155525
+DEBUG 2017-04-10 14:30:25,880 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:30:25,880 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:30:25,882 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:30:25'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:30:25')
+INFO 2017-04-10 14:30:29,709 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 5674
+DEBUG 2017-04-10 14:33:42,281 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:33:42,282 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:33:42,283 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:33:42'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:33:42')
+INFO 2017-04-10 14:33:46,141 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 9193
+DEBUG 2017-04-10 14:34:28,206 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:34:28,207 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:34:28,208 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:34:28'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:34:28')
+INFO 2017-04-10 14:34:32,092 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 5620
+DEBUG 2017-04-10 14:36:50,212 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:36:50,212 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:36:50,213 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:36:50'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:36:50')
+INFO 2017-04-10 14:36:53,951 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 9057
+DEBUG 2017-04-10 14:39:20,148 utils 9492 139824983754496 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:39:20,148 utils 9492 139824983754496 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:39:20,150 utils 9492 139824983754496 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a' AND `django_session`.`expire_date` > '2017-04-10 14:39:20'); args=('uyebrooxbu9onozcq7k5c3ruhd6yvx2a', '2017-04-10 14:39:20')
+INFO 2017-04-10 14:39:23,993 basehttp 9492 139824983754496 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 9084
+DEBUG 2017-04-10 14:40:09,423 utils 10835 140245134432000 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:40:09,423 utils 10835 140245134432000 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:40:09,463 utils 10835 140245134432000 90 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-04-10 14:40:09,466 utils 10835 140245134432000 90 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-04-10 14:40:14,882 utils 10835 140245122819840 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:40:14,882 utils 10835 140245122819840 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:40:14,884 utils 10835 140245122819840 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 14:40:14' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 14:40:14', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+INFO 2017-04-10 14:40:35,708 basehttp 10835 140245122819840 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 12884
+DEBUG 2017-04-10 14:45:53,697 utils 10835 140245122819840 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:45:53,698 utils 10835 140245122819840 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:45:53,699 utils 10835 140245122819840 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 14:45:53' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 14:45:53', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+DEBUG 2017-04-10 14:46:11,806 utils 10968 140000059131648 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:46:11,807 utils 10968 140000059131648 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:46:11,850 utils 10968 140000059131648 90 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-04-10 14:46:11,853 utils 10968 140000059131648 90 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-04-10 14:46:21,080 utils 10968 140000047519488 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:46:21,080 utils 10968 140000047519488 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:46:21,082 utils 10968 140000047519488 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 14:46:21' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 14:46:21', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+INFO 2017-04-10 14:46:24,510 basehttp 10968 140000047519488 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 7308
+DEBUG 2017-04-10 14:48:24,204 utils 10968 140000047519488 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:48:24,205 utils 10968 140000047519488 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:48:24,206 utils 10968 140000047519488 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 14:48:24' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 14:48:24', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+INFO 2017-04-10 14:48:26,960 basehttp 10968 140000047519488 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 7271
+DEBUG 2017-04-10 14:49:01,350 utils 10968 140000047519488 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 14:49:01,351 utils 10968 140000047519488 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 14:49:01,352 utils 10968 140000047519488 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 14:49:01' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 14:49:01', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+INFO 2017-04-10 14:49:04,574 basehttp 10968 140000047519488 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 7271
+DEBUG 2017-04-10 22:42:19,557 utils 10968 140000047519488 90 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-04-10 22:42:19,557 utils 10968 140000047519488 90 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-04-10 22:42:19,559 utils 10968 140000047519488 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 22:42:19' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 22:42:19', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
+INFO 2017-04-10 22:42:22,471 basehttp 10968 140000047519488 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 8817
