@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'caixiaoming',
         'PASSWORD': 'toor',
         'HOST':'127.0.0.1',
-        'PORT': '56306',
+        'PORT': '3306',
     }
 }
 
@@ -143,7 +143,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/xknight/django/iptvyw01/reports/logs/reports.log',
+            'filename': 'reports/logs/reports.log',
             'formatter':'verbose'
         },
     },

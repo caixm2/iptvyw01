@@ -15327,3 +15327,1800 @@ DEBUG 2017-04-10 22:42:19,557 utils 10968 140000047519488 90 (0.000) SELECT @@SQ
 DEBUG 2017-04-10 22:42:19,557 utils 10968 140000047519488 90 (0.000) SELECT VERSION(); args=None
 DEBUG 2017-04-10 22:42:19,559 utils 10968 140000047519488 90 (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2017-04-10 22:42:19' AND `django_session`.`session_key` = 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a'); args=('2017-04-10 22:42:19', 'uyebrooxbu9onozcq7k5c3ruhd6yvx2a')
 INFO 2017-04-10 22:42:22,471 basehttp 10968 140000047519488 131 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 8817
+DEBUG 2017-05-05 21:22:05,576 utils 6653 140292210157312 91 (0.007) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-05 21:22:05,577 utils 6653 140292210157312 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-05 21:22:06,036 utils 6653 140292210157312 91 (0.042) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 21:22:06,037 schema 6653 140292210157312 110 CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime NOT NULL); (params None)
+DEBUG 2017-05-05 21:22:06,149 utils 6653 140292210157312 91 (0.112) CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime NOT NULL); args=None
+DEBUG 2017-05-05 21:22:06,151 utils 6653 140292210157312 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+DEBUG 2017-05-05 21:22:06,152 utils 6653 140292210157312 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+DEBUG 2017-05-05 21:22:06,153 utils 6653 140292210157312 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+DEBUG 2017-05-05 21:22:06,153 utils 6653 140292210157312 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+DEBUG 2017-05-05 21:22:06,196 utils 6653 140292210157312 91 (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 21:59:30,969 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 21:59:31,012 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 21:59:31,013 base 6653 140292201764608 152 Not Found: /
+WARNING 2017-05-05 21:59:31,013 basehttp 6653 140292201764608 124 "GET / HTTP/1.1" 404 2022
+DEBUG 2017-05-05 21:59:31,447 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 21:59:31,452 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 21:59:31,453 base 6653 140292201764608 152 Not Found: /favicon.ico
+WARNING 2017-05-05 21:59:31,457 basehttp 6653 140292201764608 124 "GET /favicon.ico HTTP/1.1" 404 2073
+DEBUG 2017-05-05 21:59:31,619 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 21:59:31,621 base 6653 140292201764608 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 21:59:31,623 base 6653 140292201764608 152 Not Found: /favicon.ico
+WARNING 2017-05-05 21:59:31,626 basehttp 6653 140292201764608 124 "GET /favicon.ico HTTP/1.1" 404 2073
+INFO 2017-05-05 21:59:42,153 basehttp 6653 140292201764608 124 "GET /admin/ HTTP/1.1" 302 0
+DEBUG 2017-05-05 21:59:42,275 base 6653 140292201764608 925 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'None': None, 'True': True}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f9851fd8518>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f9851fb87f0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f9851ffbae8>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'ERROR': 40, 'SUCCESS': 25}, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f9851fb8828>}, {}, {'next': '/admin/', 'username': '', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f9851fb8be0>, 'site_header': 'Django administration', 'has_permission': False, 'available_apps': [], 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_title': 'Django site admin', 'LANGUAGE_CODE': 'en', 'LANGUAGE_BIDI': False, 'site_name': '127.0.0.1:8001', 'view': <django.contrib.auth.views.LoginView object at 0x7f9851fb8978>, 'title': 'Log in'}]"
+DEBUG 2017-05-05 21:59:42,306 base 6653 140292201764608 925 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'None': None, 'True': True}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f9851fd8518>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f9851fb87f0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f9851ffbae8>>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'ERROR': 40, 'SUCCESS': 25}, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f9851fb8828>}, {}, {'next': '/admin/', 'username': '', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f9851fb8be0>, 'site_header': 'Django administration', 'has_permission': False, 'available_apps': [], 'site_url': '/', 'app_path': '/admin/login/?next=/admin/', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_title': 'Django site admin', 'LANGUAGE_CODE': 'en', 'LANGUAGE_BIDI': False, 'site_name': '127.0.0.1:8001', 'view': <django.contrib.auth.views.LoginView object at 0x7f9851fb8978>, 'title': 'Log in'}]"
+INFO 2017-05-05 21:59:42,346 basehttp 6653 140292201764608 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1647
+INFO 2017-05-05 21:59:42,490 basehttp 6653 140292201764608 124 "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+INFO 2017-05-05 21:59:42,493 basehttp 6653 140292186916608 124 "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+INFO 2017-05-05 21:59:42,738 basehttp 6653 140292186916608 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2017-05-05 21:59:42,856 basehttp 6653 140292186916608 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2017-05-05 21:59:42,857 basehttp 6653 140292201764608 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+DEBUG 2017-05-05 22:29:00,415 utils 2862 139730538882816 91 (0.007) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-05 22:29:00,444 utils 2862 139730538882816 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-05 22:29:00,840 utils 2862 139730538882816 91 (0.042) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:29:00,933 utils 2862 139730538882816 91 (0.056) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 22:36:35,700 utils 3078 140147364890368 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-05 22:36:35,700 utils 3078 140147364890368 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-05 22:36:35,733 utils 3078 140147364890368 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:36:35,736 utils 3078 140147364890368 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 22:41:07,567 utils 3162 139817782109952 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-05 22:41:07,568 utils 3162 139817782109952 91 (0.000) SELECT @@sql_mode; args=None
+DEBUG 2017-05-05 22:41:07,568 utils 3162 139817782109952 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-05 22:41:07,636 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:07,639 utils 3162 139817782109952 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 22:41:07,641 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:07,642 utils 3162 139817782109952 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 22:41:07,653 schema 3162 139817782109952 110 CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,676 utils 3162 139817782109952 91 (0.022) CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,677 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+DEBUG 2017-05-05 22:41:07,678 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+DEBUG 2017-05-05 22:41:07,678 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+DEBUG 2017-05-05 22:41:07,678 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+DEBUG 2017-05-05 22:41:07,682 schema 3162 139817782109952 110 ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); (params ())
+DEBUG 2017-05-05 22:41:07,694 utils 3162 139817782109952 91 (0.012) ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); args=()
+DEBUG 2017-05-05 22:41:07,695 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:07,697 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0001_initial', '2017-05-05 22:41:07'); args=['contenttypes', '0001_initial', '2017-05-05 22:41:07']
+DEBUG 2017-05-05 22:41:07,704 schema 3162 139817782109952 110 CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,709 utils 3162 139817782109952 91 (0.005) CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,711 utils 3162 139817782109952 91 (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+DEBUG 2017-05-05 22:41:07,712 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+DEBUG 2017-05-05 22:41:07,713 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+DEBUG 2017-05-05 22:41:07,713 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+DEBUG 2017-05-05 22:41:07,720 schema 3162 139817782109952 110 CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+DEBUG 2017-05-05 22:41:07,726 utils 3162 139817782109952 91 (0.005) CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); args=None
+DEBUG 2017-05-05 22:41:07,727 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group'; args=['auth_group']
+DEBUG 2017-05-05 22:41:07,728 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group'; args=['auth_group']
+DEBUG 2017-05-05 22:41:07,728 schema 3162 139817782109952 110 CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,732 utils 3162 139817782109952 91 (0.003) CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,733 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+DEBUG 2017-05-05 22:41:07,733 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+DEBUG 2017-05-05 22:41:07,734 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+DEBUG 2017-05-05 22:41:07,752 schema 3162 139817782109952 110 CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,760 utils 3162 139817782109952 91 (0.008) CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,761 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,762 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,762 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,764 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,764 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,765 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,765 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,766 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,766 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,767 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,767 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user'; args=['auth_user']
+DEBUG 2017-05-05 22:41:07,768 schema 3162 139817782109952 110 CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,773 utils 3162 139817782109952 91 (0.005) CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,775 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_groups'; args=['auth_user_groups']
+DEBUG 2017-05-05 22:41:07,775 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_groups'; args=['auth_user_groups']
+DEBUG 2017-05-05 22:41:07,776 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_groups'; args=['auth_user_groups']
+DEBUG 2017-05-05 22:41:07,777 schema 3162 139817782109952 110 CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:07,781 utils 3162 139817782109952 91 (0.004) CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None
+DEBUG 2017-05-05 22:41:07,782 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_user_permissions'; args=['auth_user_user_permissions']
+DEBUG 2017-05-05 22:41:07,782 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_user_permissions'; args=['auth_user_user_permissions']
+DEBUG 2017-05-05 22:41:07,783 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_user_user_permissions'; args=['auth_user_user_permissions']
+DEBUG 2017-05-05 22:41:07,783 schema 3162 139817782109952 110 ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+DEBUG 2017-05-05 22:41:07,794 utils 3162 139817782109952 91 (0.010) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=()
+DEBUG 2017-05-05 22:41:07,794 schema 3162 139817782109952 110 ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); (params ())
+DEBUG 2017-05-05 22:41:07,806 utils 3162 139817782109952 91 (0.011) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); args=()
+DEBUG 2017-05-05 22:41:07,806 schema 3162 139817782109952 110 ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+DEBUG 2017-05-05 22:41:07,815 utils 3162 139817782109952 91 (0.009) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=()
+DEBUG 2017-05-05 22:41:07,815 schema 3162 139817782109952 110 ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+DEBUG 2017-05-05 22:41:07,942 utils 3162 139817782109952 91 (0.127) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=()
+DEBUG 2017-05-05 22:41:07,943 schema 3162 139817782109952 110 ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); (params ())
+DEBUG 2017-05-05 22:41:07,970 utils 3162 139817782109952 91 (0.027) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); args=()
+DEBUG 2017-05-05 22:41:07,970 schema 3162 139817782109952 110 ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+DEBUG 2017-05-05 22:41:07,993 utils 3162 139817782109952 91 (0.023) ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=()
+DEBUG 2017-05-05 22:41:07,994 schema 3162 139817782109952 110 ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+DEBUG 2017-05-05 22:41:08,003 utils 3162 139817782109952 91 (0.009) ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=()
+DEBUG 2017-05-05 22:41:08,003 schema 3162 139817782109952 110 ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_group_id_94350c0c_uniq` UNIQUE (`user_id`, `group_id`); (params ())
+DEBUG 2017-05-05 22:41:08,015 utils 3162 139817782109952 91 (0.012) ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_group_id_94350c0c_uniq` UNIQUE (`user_id`, `group_id`); args=()
+DEBUG 2017-05-05 22:41:08,015 schema 3162 139817782109952 110 ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+DEBUG 2017-05-05 22:41:08,024 utils 3162 139817782109952 91 (0.008) ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=()
+DEBUG 2017-05-05 22:41:08,024 schema 3162 139817782109952 110 ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+DEBUG 2017-05-05 22:41:08,032 utils 3162 139817782109952 91 (0.008) ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=()
+DEBUG 2017-05-05 22:41:08,032 schema 3162 139817782109952 110 ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_permission_id_14a6b632_uniq` UNIQUE (`user_id`, `permission_id`); (params ())
+DEBUG 2017-05-05 22:41:08,042 utils 3162 139817782109952 91 (0.010) ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_permission_id_14a6b632_uniq` UNIQUE (`user_id`, `permission_id`); args=()
+DEBUG 2017-05-05 22:41:08,043 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,044 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0001_initial', '2017-05-05 22:41:08'); args=['auth', '0001_initial', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,071 schema 3162 139817782109952 110 CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:08,076 utils 3162 139817782109952 91 (0.004) CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); args=None
+DEBUG 2017-05-05 22:41:08,077 utils 3162 139817782109952 91 (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,078 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,078 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,079 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,079 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,080 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,080 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,081 utils 3162 139817782109952 91 (0.000) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+DEBUG 2017-05-05 22:41:08,081 schema 3162 139817782109952 110 ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+DEBUG 2017-05-05 22:41:08,090 utils 3162 139817782109952 91 (0.009) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=()
+DEBUG 2017-05-05 22:41:08,091 schema 3162 139817782109952 110 ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+DEBUG 2017-05-05 22:41:08,104 utils 3162 139817782109952 91 (0.013) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); args=()
+DEBUG 2017-05-05 22:41:08,106 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,108 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2017-05-05 22:41:08'); args=['admin', '0001_initial', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,127 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,128 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0002_logentry_remove_auto_add', '2017-05-05 22:41:08'); args=['admin', '0002_logentry_remove_auto_add', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,143 schema 3162 139817782109952 110 ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+DEBUG 2017-05-05 22:41:08,156 utils 3162 139817782109952 91 (0.013) ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; args=[]
+DEBUG 2017-05-05 22:41:08,184 schema 3162 139817782109952 110 ALTER TABLE `django_content_type` DROP COLUMN `name`; (params ())
+DEBUG 2017-05-05 22:41:08,194 utils 3162 139817782109952 91 (0.010) ALTER TABLE `django_content_type` DROP COLUMN `name`; args=()
+DEBUG 2017-05-05 22:41:08,195 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,196 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0002_remove_content_type_name', '2017-05-05 22:41:08'); args=['contenttypes', '0002_remove_content_type_name', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,206 schema 3162 139817782109952 110 ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+DEBUG 2017-05-05 22:41:08,216 utils 3162 139817782109952 91 (0.010) ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; args=[]
+DEBUG 2017-05-05 22:41:08,217 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,218 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0002_alter_permission_name_max_length', '2017-05-05 22:41:08'); args=['auth', '0002_alter_permission_name_max_length', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,235 schema 3162 139817782109952 110 ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; (params [])
+DEBUG 2017-05-05 22:41:08,408 utils 3162 139817782109952 91 (0.173) ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; args=[]
+DEBUG 2017-05-05 22:41:08,411 utils 3162 139817782109952 91 (0.002) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,413 utils 3162 139817782109952 91 (0.001) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0003_alter_user_email_max_length', '2017-05-05 22:41:08'); args=['auth', '0003_alter_user_email_max_length', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,447 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,449 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0004_alter_user_username_opts', '2017-05-05 22:41:08'); args=['auth', '0004_alter_user_username_opts', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,496 schema 3162 139817782109952 110 ALTER TABLE `auth_user` MODIFY `last_login` datetime NULL; (params [])
+DEBUG 2017-05-05 22:41:08,540 utils 3162 139817782109952 91 (0.043) ALTER TABLE `auth_user` MODIFY `last_login` datetime NULL; args=[]
+DEBUG 2017-05-05 22:41:08,541 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,542 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0005_alter_user_last_login_null', '2017-05-05 22:41:08'); args=['auth', '0005_alter_user_last_login_null', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,545 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,546 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0006_require_contenttypes_0002', '2017-05-05 22:41:08'); args=['auth', '0006_require_contenttypes_0002', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,568 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,570 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0007_alter_validators_add_error_messages', '2017-05-05 22:41:08'); args=['auth', '0007_alter_validators_add_error_messages', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,588 schema 3162 139817782109952 110 ALTER TABLE `auth_user` MODIFY `username` varchar(150) NOT NULL; (params [])
+DEBUG 2017-05-05 22:41:08,598 utils 3162 139817782109952 91 (0.010) ALTER TABLE `auth_user` MODIFY `username` varchar(150) NOT NULL; args=[]
+DEBUG 2017-05-05 22:41:08,599 utils 3162 139817782109952 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:41:08,600 utils 3162 139817782109952 91 (0.000) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0008_alter_user_username_max_length', '2017-05-05 22:41:08'); args=['auth', '0008_alter_user_username_max_length', '2017-05-05 22:41:08']
+DEBUG 2017-05-05 22:41:08,611 schema 3162 139817782109952 110 CREATE TABLE `thwsheji` (`podid` integer NOT NULL PRIMARY KEY, `upid` integer NOT NULL, `quju` varchar(30) NOT NULL, `jiedian` varchar(30) NOT NULL, `jdname` varchar(30) NOT NULL, `sjkyll` double precision NOT NULL, `sjjdll` double precision NOT NULL, `sjbf` integer NOT NULL, `sjepgbf` integer NOT NULL, `sjdbkj` double precision NOT NULL, `OPT1` varchar(45) NULL, `OPT2` varchar(45) NULL, `OPT3` varchar(45) NULL, `OPT4` varchar(45) NULL, `OPT5` varchar(45) NULL, `createtime` datetime NOT NULL, `updatetime` datetime NULL, `deletetime` datetime NULL, `createowner` varchar(30) NULL, `updateowner` varchar(30) NULL, `deleteowner` varchar(30) NULL, `deleteflag` integer NOT NULL); (params None)
+DEBUG 2017-05-05 22:41:08,646 utils 3162 139817782109952 91 (0.035) CREATE TABLE `thwsheji` (`podid` integer NOT NULL PRIMARY KEY, `upid` integer NOT NULL, `quju` varchar(30) NOT NULL, `jiedian` varchar(30) NOT NULL, `jdname` varchar(30) NOT NULL, `sjkyll` double precision NOT NULL, `sjjdll` double precision NOT NULL, `sjbf` integer NOT NULL, `sjepgbf` integer NOT NULL, `sjdbkj` double precision NOT NULL, `OPT1` varchar(45) NULL, `OPT2` varchar(45) NULL, `OPT3` varchar(45) NULL, `OPT4` varchar(45) NULL, `OPT5` varchar(45) NULL, `createtime` datetime NOT NULL, `updatetime` datetime NULL, `deletetime` datetime NULL, `createowner` varchar(30) NULL, `updateowner` varchar(30) NULL, `deleteowner` varchar(30) NULL, `deleteflag` integer NOT NULL); args=None
+DEBUG 2017-05-05 22:46:34,360 utils 3576 140638796703488 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-05 22:46:34,364 utils 3576 140638796703488 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-05 22:46:34,453 utils 3576 140638796703488 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-05 22:46:34,459 utils 3576 140638796703488 91 (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-05 22:47:15,977 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'iptvyw01/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 22:47:16,027 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'iptvyw01/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 22:47:16,028 base 3576 140638788310784 152 Not Found: /iptvyw01/
+WARNING 2017-05-05 22:47:16,034 basehttp 3576 140638788310784 124 "GET /iptvyw01/ HTTP/1.1" 404 2067
+DEBUG 2017-05-05 22:47:16,264 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 22:47:16,266 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 22:47:16,267 base 3576 140638788310784 152 Not Found: /favicon.ico
+WARNING 2017-05-05 22:47:16,270 basehttp 3576 140638788310784 124 "GET /favicon.ico HTTP/1.1" 404 2073
+DEBUG 2017-05-05 22:47:16,391 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-05 22:47:16,393 base 3576 140638788310784 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-05 22:47:16,395 base 3576 140638788310784 152 Not Found: /favicon.ico
+WARNING 2017-05-05 22:47:16,397 basehttp 3576 140638788310784 124 "GET /favicon.ico HTTP/1.1" 404 2073
+INFO 2017-05-05 22:47:25,168 basehttp 3576 140638788310784 124 "GET /reports/ HTTP/1.1" 200 75
+DEBUG 2017-05-05 22:47:28,807 utils 3576 140638788310784 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+ERROR 2017-05-05 22:47:28,846 exception 3576 140638788310784 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/db/backends/utils.py", line 57, in callproc
+    return self.cursor.callproc(procname, params)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 365, in callproc
+    self._query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1305, 'PROCEDURE iptvyw01.p3a_usrs_in_ippool does not exist')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 12, in usrs_in_ippool
+    rows = call_p3a_usrs_in_ippool()
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 20, in call_p3a_usrs_in_ippool
+    cursor.callproc("p3a_usrs_in_ippool", args)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/db/backends/utils.py", line 57, in callproc
+    return self.cursor.callproc(procname, params)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/db/backends/utils.py", line 57, in callproc
+    return self.cursor.callproc(procname, params)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 365, in callproc
+    self._query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1305, 'PROCEDURE iptvyw01.p3a_usrs_in_ippool does not exist')
+ERROR 2017-05-05 22:47:29,040 basehttp 3576 140638788310784 124 "GET /reports/usrs_in_ippool/ HTTP/1.1" 500 132736
+DEBUG 2017-05-06 06:28:02,157 utils 3857 140634831156992 91 (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-06 06:28:02,173 utils 3857 140634831156992 91 (0.009) SELECT VERSION(); args=None
+DEBUG 2017-05-06 06:28:02,507 utils 3857 140634831156992 91 (0.002) SHOW FULL TABLES; args=None
+DEBUG 2017-05-06 06:28:02,543 utils 3857 140634831156992 91 (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+INFO 2017-05-06 06:29:00,348 basehttp 3857 140634822764288 124 "GET /reports/ HTTP/1.1" 200 75
+DEBUG 2017-05-06 06:29:00,623 base 3857 140634822764288 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-06 06:29:00,703 base 3857 140634822764288 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-06 06:29:00,704 base 3857 140634822764288 152 Not Found: /favicon.ico
+WARNING 2017-05-06 06:29:00,705 basehttp 3857 140634822764288 124 "GET /favicon.ico HTTP/1.1" 404 2073
+DEBUG 2017-05-06 06:29:02,379 utils 3857 140634822764288 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-06 06:29:02,686 basehttp 3857 140634822764288 124 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 8817
+DEBUG 2017-05-06 07:24:40,406 base 3857 140634822764288 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'None': None, 'False': False, 'True': True}, {'request': <WSGIRequest: GET '/reports/'>, 'csrf_token': <SimpleLazyObject: 'nAlBQHus14tVTaoU3Gd7EZDrNoLF3dnb8O861kHxAhXHZWEW4cabqErJoCVaVLrP'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fe813cc6ae8>>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'INFO': 20, 'SUCCESS': 25, 'DEBUG': 10, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fe813d12b00>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fe813cc43c8>}, {}]"
+INFO 2017-05-06 07:24:40,482 basehttp 3857 140634822764288 124 "GET /reports/ HTTP/1.1" 200 280
+DEBUG 2017-05-07 06:15:15,944 utils 16562 140666005182208 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:15:15,946 utils 16562 140666005182208 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:20:05,616 utils 16788 139685667686144 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:20:05,616 utils 16788 139685667686144 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:20:53,519 utils 16809 139714491057920 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:20:53,523 utils 16809 139714491057920 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:21:13,639 utils 16845 140172251465472 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:21:13,640 utils 16845 140172251465472 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:24:46,238 utils 16925 140572802057984 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:24:46,239 utils 16925 140572802057984 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:24:46,348 utils 16925 140572802057984 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:24:46,358 utils 16925 140572802057984 91 (0.007) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+ERROR 2017-05-07 06:25:01,335 exception 16925 140572793665280 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view reports.views.index didn't return an HttpResponse object. It returned None instead.
+ERROR 2017-05-07 06:25:01,442 basehttp 16925 140572793665280 124 "GET /reports/ HTTP/1.1" 500 64845
+DEBUG 2017-05-07 06:26:52,085 utils 17014 140042516354816 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:26:52,091 utils 17014 140042516354816 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:26:52,191 utils 17014 140042516354816 91 (0.002) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:26:52,198 utils 17014 140042516354816 91 (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+ERROR 2017-05-07 06:27:00,934 exception 17014 140042507962112 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view reports.views.index didn't return an HttpResponse object. It returned None instead.
+ERROR 2017-05-07 06:27:01,054 basehttp 17014 140042507962112 124 "GET /reports/ HTTP/1.1" 500 64845
+ERROR 2017-05-07 06:29:11,959 exception 17014 140042507962112 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view reports.views.index didn't return an HttpResponse object. It returned None instead.
+ERROR 2017-05-07 06:29:12,074 basehttp 17014 140042507962112 124 "GET /reports/ HTTP/1.1" 500 64845
+ERROR 2017-05-07 06:34:16,421 exception 17014 140042507962112 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view reports.views.index didn't return an HttpResponse object. It returned None instead.
+ERROR 2017-05-07 06:34:16,590 basehttp 17014 140042507962112 124 "GET /reports/ HTTP/1.1" 500 64845
+DEBUG 2017-05-07 06:35:47,530 utils 17232 140002953312000 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:35:47,531 utils 17232 140002953312000 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:35:47,627 utils 17232 140002953312000 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:35:47,634 utils 17232 140002953312000 91 (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+ERROR 2017-05-07 06:35:55,449 exception 17232 140002944919296 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 20, in index
+    return render(request, 'index.html', {'form': form})
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2017-05-07 06:35:55,621 basehttp 17232 140002944919296 124 "GET /reports/ HTTP/1.1" 500 89100
+ERROR 2017-05-07 06:37:12,848 exception 17232 140002944919296 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 20, in index
+    return render(request, 'index.html', {'form': form})
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2017-05-07 06:37:12,996 basehttp 17232 140002944919296 124 "GET /reports/ HTTP/1.1" 500 89100
+DEBUG 2017-05-07 06:39:16,595 utils 17319 140489157867264 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:39:16,596 utils 17319 140489157867264 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:39:16,704 utils 17319 140489157867264 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:39:16,713 utils 17319 140489157867264 91 (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+INFO 2017-05-07 06:39:25,228 basehttp 17319 140489149474560 124 "GET /reports/ HTTP/1.1" 200 493
+ERROR 2017-05-07 06:39:33,394 exception 17319 140489149474560 135 Internal Server Error: /reports/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 17, in index
+    return HttpRespponse(str(int(a) + int(b)))
+NameError: name 'HttpRespponse' is not defined
+ERROR 2017-05-07 06:39:33,526 basehttp 17319 140489149474560 124 "POST /reports/ HTTP/1.1" 500 74997
+DEBUG 2017-05-07 06:39:59,330 utils 17351 140211462002432 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:39:59,331 utils 17351 140211462002432 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:39:59,436 utils 17351 140211462002432 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:39:59,442 utils 17351 140211462002432 91 (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+INFO 2017-05-07 06:40:06,033 basehttp 17351 140211453609728 124 "POST /reports/ HTTP/1.1" 200 1
+DEBUG 2017-05-07 06:42:50,445 utils 17420 140406589449984 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:42:50,446 utils 17420 140406589449984 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:42:50,592 utils 17420 140406589449984 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:42:50,600 utils 17420 140406589449984 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 06:44:13,191 utils 17477 139733691721472 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:44:13,191 utils 17477 139733691721472 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:44:39,547 utils 17499 140646658434816 91 (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:44:39,548 utils 17499 140646658434816 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:45:12,100 utils 17524 140202411878144 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 06:45:12,114 utils 17524 140202411878144 91 (0.013) SELECT VERSION(); args=None
+DEBUG 2017-05-07 06:45:12,228 utils 17524 140202411878144 91 (0.003) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 06:45:12,234 utils 17524 140202411878144 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 07:37:28,075 utils 17963 139837277808384 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 07:37:28,076 utils 17963 139837277808384 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 07:37:28,191 utils 17963 139837277808384 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 07:37:28,195 utils 17963 139837277808384 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 07:39:37,915 base 17963 139837269415680 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'True': True, 'None': None}, {'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f2e66003048>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f2e65f06780>, 'csrf_token': <SimpleLazyObject: 'uoRoiq4PtbCjxttWDNuRjT5aoBpxK652fCETt3hU2o65DfJYEjrV5yTsZPz2CE9G'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f2e65f43bf8>>}, {}, {'addnum': 5}]"
+INFO 2017-05-07 07:39:37,922 basehttp 17963 139837269415680 124 "POST /reports/ HTTP/1.1" 200 284
+DEBUG 2017-05-07 07:39:59,483 base 17963 139837269415680 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'True': True, 'None': None}, {'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f2e65ef5358>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f2e65eb1cf8>, 'csrf_token': <SimpleLazyObject: 'QxpG82w0F0lFkXDhLSKGuivwIQCPvqjZBLcbjFJ5edPrqJTjMoHKgXjOj4MknYnD'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f2e65f23950>>}, {}, {'addnum': 5}]"
+INFO 2017-05-07 07:39:59,490 basehttp 17963 139837269415680 124 "POST /reports/ HTTP/1.1" 200 284
+DEBUG 2017-05-07 07:40:05,064 base 17963 139837269415680 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'False': False, 'True': True, 'None': None}, {'request': <WSGIRequest: GET '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f2e65eb19b0>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f2e65ebb390>, 'csrf_token': <SimpleLazyObject: 'Eznrrs9ATcqR3V4z7zlmzSdWz8h5YAjEpNaWC5mFspUD9HkB85iqlx1eamrAQ8ni'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f2e65f239d8>>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 07:40:05,070 basehttp 17963 139837269415680 124 "GET /reports/ HTTP/1.1" 200 496
+DEBUG 2017-05-07 07:40:12,460 base 17963 139837269415680 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'True': True, 'None': None}, {'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f2e65f06ef0>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f2e65ebb358>, 'csrf_token': <SimpleLazyObject: 'j1HfHRVV5Iv3JLozubZEYduyXhL62rQL4fuKSu80EVZPPxEBvHWIKSiQyvVBUZUp'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f2e65f23ae8>>}, {}, {'addnum': 2}]"
+INFO 2017-05-07 07:40:12,462 basehttp 17963 139837269415680 124 "POST /reports/ HTTP/1.1" 200 284
+DEBUG 2017-05-07 07:51:26,549 utils 18198 140395097642752 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 07:51:26,551 utils 18198 140395097642752 91 (0.002) SELECT VERSION(); args=None
+DEBUG 2017-05-07 07:51:26,654 utils 18198 140395097642752 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 07:51:26,662 utils 18198 140395097642752 91 (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 07:58:19,721 base 18198 140395089250048 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb04696ada0>, 'csrf_token': <SimpleLazyObject: 'zj2jnR4prFu2OlJy3RzT11BIKEfkbLawkxPOyuhu0SYOU7ZA4nwXNGp0lSpP3jea'>, 'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0469fd9e8>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb0469b5bf8>>}, {}, {'addnum': 2}]"
+INFO 2017-05-07 07:58:19,740 basehttp 18198 140395089250048 124 "POST /reports/ HTTP/1.1" 200 284
+DEBUG 2017-05-07 07:58:24,243 base 18198 140395089250048 925 Exception while resolving variable 'rows' in template 'reports/usrs_in_ippool.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb0469259e8>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fb0469979d8>>, 'request': <WSGIRequest: GET '/reports/usrs_in_ippool/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb04696a908>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb046997950>>}, {}, {}]"
+INFO 2017-05-07 07:58:24,246 basehttp 18198 140395089250048 124 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 605
+WARNING 2017-05-07 07:58:41,678 csrf 18198 140395089250048 160 Forbidden (CSRF token missing or incorrect.): /reports/usrs_in_ippool/
+WARNING 2017-05-07 07:58:41,716 basehttp 18198 140395089250048 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 403 2502
+WARNING 2017-05-07 07:59:49,869 csrf 18198 140395089250048 160 Forbidden (CSRF token missing or incorrect.): /reports/usrs_in_ippool/
+WARNING 2017-05-07 07:59:49,872 basehttp 18198 140395089250048 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 403 2502
+DEBUG 2017-05-07 08:02:27,365 base 18198 140395089250048 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb04693f2b0>, 'csrf_token': <SimpleLazyObject: 'oMMu5nSEylCjkJcYc4wcnsEeFBRlv6et90zZg05J7y65qvs0dAtg97swgP1QnEi7'>, 'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0469441d0>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb046997ae8>>}, {}, {'addnum': 2}]"
+INFO 2017-05-07 08:02:27,372 basehttp 18198 140395089250048 124 "POST /reports/ HTTP/1.1" 200 760
+DEBUG 2017-05-07 08:02:31,559 base 18198 140395089250048 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'usrs_in_ippool/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-07 08:02:31,561 base 18198 140395089250048 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'usrs_in_ippool/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-07 08:02:31,564 base 18198 140395089250048 152 Not Found: /usrs_in_ippool/
+WARNING 2017-05-07 08:02:31,565 basehttp 18198 140395089250048 124 "POST /usrs_in_ippool/ HTTP/1.1" 404 2086
+DEBUG 2017-05-07 08:04:01,525 base 18198 140395089250048 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'usrs_in_ippool/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>"
+DEBUG 2017-05-07 08:04:01,527 base 18198 140395089250048 925 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/urls/resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'reports.urls' from '/home/caixiaoming/django/iptvyw01/reports/urls.py'> (reports:reports) ^reports/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'usrs_in_ippool/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-05-07 08:04:01,532 base 18198 140395089250048 152 Not Found: /usrs_in_ippool/
+WARNING 2017-05-07 08:04:01,533 basehttp 18198 140395089250048 124 "POST /usrs_in_ippool/ HTTP/1.1" 404 2086
+DEBUG 2017-05-07 08:04:08,989 base 18198 140395089250048 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb046936e10>, 'csrf_token': <SimpleLazyObject: 'yxeI26tUlLvBDIgoi3sxcVP7YNcgtKIVjL1ddJGZUYZnJuwqjzpBYADpz1mLliMz'>, 'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb046936588>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb0468dd048>>}, {}, {'addnum': 2}]"
+INFO 2017-05-07 08:04:08,996 basehttp 18198 140395089250048 124 "POST /reports/ HTTP/1.1" 200 768
+WARNING 2017-05-07 08:04:13,455 csrf 18198 140395089250048 160 Forbidden (CSRF token missing or incorrect.): /reports/usrs_in_ippool/
+WARNING 2017-05-07 08:04:13,460 basehttp 18198 140395089250048 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 403 2502
+DEBUG 2017-05-07 08:05:35,909 base 18198 140395089250048 925 Exception while resolving variable 'form' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [form] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb0468df128>, 'csrf_token': <SimpleLazyObject: 'dOjQD9MMd7c2cdrU07v2ylHJNLbGRRgDY26lOMZRMkGOiZHW1Ds6k0v1oZlbJpkh'>, 'request': <WSGIRequest: POST '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0468dfc88>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb0468dd268>>}, {}, {'addnum': 2}]"
+INFO 2017-05-07 08:05:35,915 basehttp 18198 140395089250048 124 "POST /reports/ HTTP/1.1" 200 894
+DEBUG 2017-05-07 08:05:40,032 utils 18198 140395089250048 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 08:05:40,468 basehttp 18198 140395089250048 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 8994
+DEBUG 2017-05-07 08:06:04,992 base 18198 140395089250048 925 Exception while resolving variable 'rows' in template 'reports/usrs_in_ippool.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in "[{'False': False, 'None': None, 'True': True}, {'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'ERROR': 40, 'WARNING': 30}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb046944978>, 'csrf_token': <SimpleLazyObject: 'yJPxw4jqoSYAqIqlRF5h8f0Mob0gz1jfjXC2HHwvX5smwuGnSb2lUUO4ZpaLrznT'>, 'request': <WSGIRequest: GET '/reports/usrs_in_ippool/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0469443c8>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb046997950>>}, {}, {}]"
+INFO 2017-05-07 08:06:04,999 basehttp 18198 140395089250048 124 "GET /reports/usrs_in_ippool/ HTTP/1.1" 200 729
+DEBUG 2017-05-07 08:32:56,588 utils 18802 139673833735936 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 08:32:56,595 utils 18802 139673833735936 91 (0.006) SELECT VERSION(); args=None
+DEBUG 2017-05-07 08:32:56,743 utils 18802 139673833735936 91 (0.003) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 08:32:56,750 utils 18802 139673833735936 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:25:29,114 utils 19451 140320935569152 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:25:29,115 utils 19451 140320935569152 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:25:29,203 utils 19451 140320935569152 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:25:29,211 utils 19451 140320935569152 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:41:08,759 utils 19631 140711397799680 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:41:08,760 utils 19631 140711397799680 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:41:08,858 utils 19631 140711397799680 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:41:08,866 utils 19631 140711397799680 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:42:32,511 utils 19709 140501783820032 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:42:32,512 utils 19709 140501783820032 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:42:32,627 utils 19709 140501783820032 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:42:32,634 utils 19709 140501783820032 91 (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:43:41,991 base 19709 140501775427328 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'False': False, 'None': None, 'True': True}, {'request': <WSGIRequest: GET '/reports/'>, 'csrf_token': <SimpleLazyObject: 'flFkp1ZC1Ja0kDF5fyQE49FqJTIWxloJ0zsPAEcHAWEMqpV7g4NIQOtIk7SrpTsn'>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'ERROR': 40}, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc91d950860>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fc91d994bf8>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc91d9c58d0>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 09:43:42,000 basehttp 19709 140501775427328 124 "GET /reports/ HTTP/1.1" 200 1106
+ERROR 2017-05-07 09:43:46,914 exception 19709 140501775427328 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 26, in usrs_in_ippool
+    ipnum = request.POST[ipnum]
+UnboundLocalError: local variable 'ipnum' referenced before assignment
+ERROR 2017-05-07 09:43:47,047 basehttp 19709 140501775427328 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 500 74579
+DEBUG 2017-05-07 09:47:40,270 utils 19801 139796028688128 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:47:40,270 utils 19801 139796028688128 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:47:40,367 utils 19801 139796028688128 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:47:40,378 utils 19801 139796028688128 91 (0.008) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:47:52,367 utils 19801 139795950991104 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 09:47:52,678 basehttp 19801 139795950991104 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 8994
+DEBUG 2017-05-07 09:48:16,900 utils 19833 140399661397760 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:48:16,904 utils 19833 140399661397760 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:48:17,000 utils 19833 140399661397760 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:48:17,007 utils 19833 140399661397760 91 (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:48:39,313 base 19833 140399653005056 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'None': None, 'True': True, 'False': False}, {'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25, 'DEBUG': 10}, 'csrf_token': <SimpleLazyObject: 'xY5kjb2HgcrIlwttvH9F4XjvVRCrTWRZicSPuOfMPpVuriJvwd6JQC7Nw5MWLuVD'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb156a51a58>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb156a06bf8>>, 'request': <WSGIRequest: GET '/reports/'>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb1569c9860>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 09:48:39,322 basehttp 19833 140399653005056 124 "GET /reports/ HTTP/1.1" 200 1106
+DEBUG 2017-05-07 09:48:42,999 utils 19833 140399653005056 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:50:16,445 utils 19867 140589050898176 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:50:16,445 utils 19867 140589050898176 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:50:16,560 utils 19867 140589050898176 91 (0.003) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:50:16,570 utils 19867 140589050898176 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 09:50:26,349 utils 19867 140589042505472 91 (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 09:50:26,729 basehttp 19867 140589042505472 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 8199
+DEBUG 2017-05-07 09:56:05,987 utils 19952 139647732688640 91 (0.005) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:56:05,996 utils 19952 139647732688640 91 (0.005) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:56:06,216 utils 19952 139647732688640 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:56:06,222 utils 19952 139647732688640 91 (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+ERROR 2017-05-07 09:56:22,566 exception 19952 139647724295936 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 26, in usrs_in_ippool
+    ipnum = request.POST[ipnum]
+UnboundLocalError: local variable 'ipnum' referenced before assignment
+ERROR 2017-05-07 09:56:22,688 basehttp 19952 139647724295936 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 500 74551
+DEBUG 2017-05-07 09:59:51,000 utils 19996 140490666542848 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 09:59:51,002 utils 19996 140490666542848 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 09:59:51,106 utils 19996 140490666542848 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 09:59:51,115 utils 19996 140490666542848 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 10:00:04,349 base 19996 140490658150144 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'True': True, 'None': None, 'False': False}, {'request': <WSGIRequest: GET '/reports/'>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc686f0d438>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fc686f51bf8>>, 'csrf_token': <SimpleLazyObject: 'UvmeDolR0QbV63ToADlelrWmOp6padVVFJ9JO1yWz3FHcP9qB9ii76KEpDgU2LZz'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc686f82ba8>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'WARNING': 30, 'SUCCESS': 25, 'DEBUG': 10, 'INFO': 20}}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 10:00:04,357 basehttp 19996 140490658150144 124 "GET /reports/ HTTP/1.1" 200 1106
+ERROR 2017-05-07 10:00:07,227 exception 19996 140490658150144 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 26, in usrs_in_ippool
+    ipnum1 = request.POST[ipnum]
+NameError: name 'ipnum' is not defined
+ERROR 2017-05-07 10:00:07,366 basehttp 19996 140490658150144 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 500 74412
+DEBUG 2017-05-07 11:44:12,237 utils 20891 139765233284864 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 11:44:12,237 utils 20891 139765233284864 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 11:44:12,347 utils 20891 139765233284864 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 11:44:12,355 utils 20891 139765233284864 91 (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 11:44:30,197 base 20891 139765224892160 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'False': False, 'True': True, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f1da0024898>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f1da0067bf8>>, 'csrf_token': <SimpleLazyObject: 'LNaGys4qn4B3uunShzAeX9XhKRc1XF9Ww1XbJ5hvWh5PAgDUi5xiJOLzl5mwPddA'>, 'request': <WSGIRequest: GET '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f1da009a7f0>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25}}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 11:44:30,205 basehttp 20891 139765224892160 124 "GET /reports/ HTTP/1.1" 200 1105
+ERROR 2017-05-07 11:44:35,374 exception 20891 139765224892160 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 26, in usrs_in_ippool
+    ipnum1 = request.GET[ipnum]
+NameError: name 'ipnum' is not defined
+ERROR 2017-05-07 11:44:35,520 basehttp 20891 139765224892160 124 "GET /reports/usrs_in_ippool/?csrfmiddlewaretoken=LNaGys4qn4B3uunShzAeX9XhKRc1XF9Ww1XbJ5hvWh5PAgDUi5xiJOLzl5mwPddA&ipnum=16&ipfield=B HTTP/1.1" 500 75320
+DEBUG 2017-05-07 11:48:05,751 utils 20981 139832989935360 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 11:48:05,752 utils 20981 139832989935360 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 11:48:05,855 utils 20981 139832989935360 91 (0.002) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 11:48:05,866 utils 20981 139832989935360 91 (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 11:48:12,765 base 20981 139832981542656 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'None': None, 'True': True, 'False': False}, {'request': <WSGIRequest: GET '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f2d67b26da0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30}, 'csrf_token': <SimpleLazyObject: 'DH38AlgdXBlfGCYIHTgz71iGzvfT6OnhoVQDLYtiwOP1MoeKIpdDTG6YaJpoYmrV'>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f2d665c4898>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f2d66607bf8>>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 11:48:12,773 basehttp 20981 139832981542656 124 "GET /reports/ HTTP/1.1" 200 1105
+DEBUG 2017-05-07 11:48:15,516 utils 20981 139832981542656 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 11:48:15,753 basehttp 20981 139832981542656 124 "GET /reports/usrs_in_ippool/?csrfmiddlewaretoken=DH38AlgdXBlfGCYIHTgz71iGzvfT6OnhoVQDLYtiwOP1MoeKIpdDTG6YaJpoYmrV&ipnum=16&ipfield=B HTTP/1.1" 200 8994
+DEBUG 2017-05-07 11:49:29,386 utils 21047 140397268268800 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 11:49:29,387 utils 21047 140397268268800 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 11:49:29,500 utils 21047 140397268268800 91 (0.001) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 11:49:29,504 utils 21047 140397268268800 91 (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 11:50:10,195 base 21047 140397259876096 925 Exception while resolving variable 'rows' in template 'reports/usrs_in_ippool.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in "[{'True': True, 'None': None, 'False': False}, {'csrf_token': <SimpleLazyObject: 'PzaASST9l1dixff0NzcrarYoqqdfdrWXANX53v6eUeH4D1v2O59vW6MG1EnK5Z0B'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb0c3f98c80>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb0c3f5a978>, 'request': <WSGIRequest: GET '/reports/usrs_in_ippool/?csrfmiddlewaretoken=DH38AlgdXBlfGCYIHTgz71iGzvfT6OnhoVQDLYtiwOP1MoeKIpdDTG6YaJpoYmrV&ipnum=128&ipfield=B'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0c3fe2a90>}, {}, {}]"
+INFO 2017-05-07 11:50:10,199 basehttp 21047 140397259876096 124 "GET /reports/usrs_in_ippool/?csrfmiddlewaretoken=DH38AlgdXBlfGCYIHTgz71iGzvfT6OnhoVQDLYtiwOP1MoeKIpdDTG6YaJpoYmrV&ipnum=128&ipfield=B HTTP/1.1" 200 270
+DEBUG 2017-05-07 11:50:54,272 base 21047 140397259876096 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'True': True, 'None': None, 'False': False}, {'csrf_token': <SimpleLazyObject: 'SCkeDceAdr6f6v79OVlF3cvqMsuchPSuDQ7JOPrFMEA1chnbPriJPRjInGEH9nW8'>, 'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25, 'INFO': 20, 'ERROR': 40}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fb0c3f5d840>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fb0c3f67748>, 'request': <WSGIRequest: GET '/reports/'>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fb0c3f5af60>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 11:50:54,276 basehttp 21047 140397259876096 124 "GET /reports/ HTTP/1.1" 200 1106
+ERROR 2017-05-07 11:50:59,054 exception 21047 140397259876096 135 Internal Server Error: /reports/usrs_in_ippool/
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caixiaoming/django/iptvyw01/reports/views.py", line 26, in usrs_in_ippool
+    ipnum1 = request.POST.GET["ipnum"]
+AttributeError: 'QueryDict' object has no attribute 'GET'
+ERROR 2017-05-07 11:50:59,183 basehttp 21047 140397259876096 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 500 74580
+DEBUG 2017-05-07 11:52:06,827 utils 21171 139953031042816 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 11:52:06,828 utils 21171 139953031042816 91 (0.000) SELECT VERSION(); args=None
+DEBUG 2017-05-07 11:52:06,934 utils 21171 139953031042816 91 (0.002) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 11:52:06,942 utils 21171 139953031042816 91 (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 11:52:14,173 base 21171 139953022650112 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'None': None, 'False': False, 'True': True}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f49595e4390>, 'DEFAULT_MESSAGE_LEVELS': {'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f4959654b00>, 'csrf_token': <SimpleLazyObject: '5phfVsnRK4Eyr032YtnFZbQpFfApmrBWQD4K65AWjh8kxMj4ZZkJLQEHgtKUeZFA'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f495ab412f0>>, 'request': <WSGIRequest: GET '/reports/'>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 11:52:14,181 basehttp 21171 139953022650112 124 "GET /reports/ HTTP/1.1" 200 1106
+DEBUG 2017-05-07 11:52:16,868 utils 21171 139953022650112 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 11:52:17,110 basehttp 21171 139953022650112 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 7740
+DEBUG 2017-05-07 11:52:25,125 utils 21171 139953022650112 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 11:52:27,248 basehttp 21171 139953022650112 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 15844
+DEBUG 2017-05-07 11:53:40,915 utils 21226 139787770013440 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+DEBUG 2017-05-07 11:53:40,918 utils 21226 139787770013440 91 (0.001) SELECT VERSION(); args=None
+DEBUG 2017-05-07 11:53:41,025 utils 21226 139787770013440 91 (0.005) SHOW FULL TABLES; args=None
+DEBUG 2017-05-07 11:53:41,033 utils 21226 139787770013440 91 (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+DEBUG 2017-05-07 11:53:56,495 base 21226 139787761620736 925 Exception while resolving variable 'addnum' in template 'reports/index.html'.
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'addnum'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caixiaoming/.pyenv/versions/env343/lib/python3.4/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [addnum] in "[{'None': None, 'True': True, 'False': False}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f22df123b70>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7f22df0f3bf8>>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'WARNING': 30, 'DEBUG': 10, 'SUCCESS': 25}, 'request': <WSGIRequest: GET '/reports/'>, 'csrf_token': <SimpleLazyObject: 'SHaoiS8KEjtAh2M3NSBqAHRt3yqgNqTSDVXTtvlPdwXmnO25OoyummFLEMALFYXw'>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f22df0af898>}, {}, {'form': <AddForm bound=False, valid=False, fields=(a;b)>}]"
+INFO 2017-05-07 11:53:56,502 basehttp 21226 139787761620736 124 "GET /reports/ HTTP/1.1" 200 1106
+DEBUG 2017-05-07 11:54:05,223 utils 21226 139787761620736 91 (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+INFO 2017-05-07 11:54:08,722 basehttp 21226 139787761620736 124 "POST /reports/usrs_in_ippool/ HTTP/1.1" 200 17248
