@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.db import connection
 import logging
 from django.http import HttpResponse
+import time
 
 from .forms import AddForm
 # Create your views here.
-
+'''
+index显示内容
+'''
 def index(request):
     logger = logging.getLogger('django')
     #return render(request, 'reports/index.html')
@@ -21,25 +24,30 @@ def index(request):
         form = AddForm()
     return render(request, 'reports/index.html', {'form': form})
 
+'''
+显示一个IP段内有多少用户和对应的区局
+'''
 def usrs_in_ippool(request):
+    time1 = time.time()
     if request.method == 'POST':
         ipnum = request.POST["ipnum"]
         ipfield = request.POST["ipfield"]
-        #ipnum = 128
-        #ipfield = 'B'
-        rows = call_p3a_usrs_in_ippool(ipnum, ipfield)
-        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows})
-    else:
-        pass
+        sipaddr = request.POST.get("sipaddr","")
+        daylenth = request.POST["daylenth"]
+        plat = request.POST["plat"]
+        args = (ipnum, ipfield, daylenth, plat, sipaddr)
+        rows = call_p3a_usrs_in_ippool(*args)
+        rowslen = len(rows)
+        time2 =time.time()
+        timeminus = round(time2-time1,3)
+        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows, 'timeminus': timeminus,'rowslen':rowslen})
     return render(request, 'reports/usrs_in_ippool.html')
 
-def call_p3a_usrs_in_ippool(ipnum, ipfield):
+def call_p3a_usrs_in_ippool(*args):
     with connection.cursor() as cursor:
-        #cursor.execute("select ipstart, ipend from tnoc_usr_ippool;")
-        #rows = cursor.fetchall()
-        args = (ipnum, ipfield)
-        cursor.callproc("p3a_usrs_in_ippool", args)
-        #for results in cursor.stored_results():
+        #args = (ipnum, ipfield)
+        #cursor.callproc("p3a_usrs_in_ippool", args)
+        cursor.callproc("pusrs_in_ippool_fin", args)
         rows = cursor.fetchall()
         cursor.close()
     return rows

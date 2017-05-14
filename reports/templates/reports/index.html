@@ -1,24 +1,7 @@
 <h1>test</h1>
 
 <a href="usrs_in_ippool/" >计算各段IP中的用户数</a>
-<form action="/reports/usrs_in_ippool/" method="post">
- {% csrf_token %} 
-<select name="ipnum">
-<option value="1" selected>1</option>
-<option value="2">2</option>
-<option value="4">4</option>
-<option value="8">8</option>
-<option value="16">16</option>
-<option value="32">32</option>
-<option value="64">64</option>
-<option value="128">128</option>
-</select>
-<select name="ipfield">
-<option value="B" selected>B</option>
-<option value="C">C</option>
-</select>
-<input type="submit" value="submit">
-</form>
+
 
 <form method="post">
 {% csrf_token %}
