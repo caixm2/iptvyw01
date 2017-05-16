@@ -4,7 +4,7 @@ import logging
 from django.http import HttpResponse
 import time
 
-from .forms import AddForm
+from reports.tools.forms import AddForm, UsrInPoolForm
 # Create your views here.
 '''
 index显示内容
@@ -29,19 +29,22 @@ def index(request):
 '''
 def usrs_in_ippool(request):
     time1 = time.time()
-    if request.method == 'POST':
+    ursinpool = UsrInPoolForm()
+    '''if request.method == 'POST':
         ipnum = request.POST["ipnum"]
         ipfield = request.POST["ipfield"]
         sipaddr = request.POST.get("sipaddr","")
         daylenth = request.POST["daylenth"]
         plat = request.POST["plat"]
-        args = (ipnum, ipfield, daylenth, plat, sipaddr)
+        zero = request.POST.get("zero",1)
+
+        args = (ipnum, ipfield, daylenth, plat, sipaddr, zero)
         rows = call_p3a_usrs_in_ippool(*args)
         rowslen = len(rows)
         time2 =time.time()
         timeminus = round(time2-time1,3)
-        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows, 'timeminus': timeminus,'rowslen':rowslen})
-    return render(request, 'reports/usrs_in_ippool.html')
+        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows, 'timeminus': timeminus,'rowslen':rowslen})'''
+    return render(request, 'reports/usrs_in_ippool.html', {'ursinpool': ursinpool})
 
 def call_p3a_usrs_in_ippool(*args):
     with connection.cursor() as cursor:
