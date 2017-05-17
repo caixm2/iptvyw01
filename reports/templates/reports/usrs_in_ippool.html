@@ -1,40 +1,14 @@
 <h1>计算IP段中用户数</h1>
-
+{% load l10n %}
 
 <form action="/reports/usrs_in_ippool/" method="post">
  {% csrf_token %} 
-<!-- IP段：
-<select name="ipnum">
-<option value="1" selected>1</option>
-<option value="2">2</option>
-<option value="4">4</option>
-<option value="8">8</option>
-<option value="16">16</option>
-<option value="32">32</option>
-<option value="64">64</option>
-<option value="128">128</option>
-</select>
-<select name="ipfield">
-<option value="B" selected>B</option>
-<option value="C">C</option>
-</select>
-查询天数：
-<select name="daylenth">
-  <option value="4" selected>1</option>
-  <option value="31">31</option>
-</select>
-查询平台：
-<select name="plat">
-  <option value="HW" selected>华为</option>
-  <option value="ZTE">中兴</option>
-</select>
-<input type="checkbox" name="zero" value="Y" checked>是否显示0用户IP段<br>
-单个IP地址：<input type="text" name="sipaddr">
-<input type="submit" value="查询">-->
-IP段：{{ursinpool.iplen}}
-查询天数：{{ursinpool.daylength}}
-{{ursinpool.plat}}
-{{ursinpool.sip}}
+{{ursinpool.iplen.label}} {{ursinpool.iplen}}
+{{ursinpool.daylength.label}} {{ursinpool.daylength}}
+{{ursinpool.plat.label}} {{ursinpool.plat}}
+{{ursinpool.zero}}{{ursinpool.zero.label}} 
+{{ursinpool.sip.label}} {{ursinpool.sip}}
+<input type="submit" value="查询">
 </form>
 <span>
 {% if timeminus %}

@@ -30,20 +30,23 @@ def index(request):
 def usrs_in_ippool(request):
     time1 = time.time()
     ursinpool = UsrInPoolForm()
-    '''if request.method == 'POST':
-        ipnum = request.POST["ipnum"]
-        ipfield = request.POST["ipfield"]
-        sipaddr = request.POST.get("sipaddr","")
-        daylenth = request.POST["daylenth"]
+    if request.method == 'POST':
+        form = UsrInPoolForm(request.POST)
+        iplen = request.POST["iplen"]
+        daylength = request.POST["daylength"]
         plat = request.POST["plat"]
-        zero = request.POST.get("zero",1)
+        zero = request.POST.get("zero", "N")
+        sip = request.POST.get("sip", "")
+        c = {}
+        c['iplen'] = iplen
 
-        args = (ipnum, ipfield, daylenth, plat, sipaddr, zero)
+        args = (iplen, daylength, plat, sip,zero)
         rows = call_p3a_usrs_in_ippool(*args)
         rowslen = len(rows)
         time2 =time.time()
         timeminus = round(time2-time1,3)
-        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows, 'timeminus': timeminus,'rowslen':rowslen})'''
+        return render(request, 'reports/usrs_in_ippool.html', {'rows': rows, 
+            'timeminus': timeminus,'rowslen':rowslen, 'ursinpool': form})
     return render(request, 'reports/usrs_in_ippool.html', {'ursinpool': ursinpool})
 
 def call_p3a_usrs_in_ippool(*args):
