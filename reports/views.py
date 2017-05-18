@@ -37,8 +37,6 @@ def usrs_in_ippool(request):
         plat = request.POST["plat"]
         zero = request.POST.get("zero", "N")
         sip = request.POST.get("sip", "")
-        c = {}
-        c['iplen'] = iplen
 
         args = (iplen, daylength, plat, sip,zero)
         rows = call_p3a_usrs_in_ippool(*args)
