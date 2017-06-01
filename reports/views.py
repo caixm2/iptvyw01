@@ -11,14 +11,12 @@ index显示内容
 '''
 def index(request):
     logger = logging.getLogger('django')
-    #return render(request, 'reports/index.html')
     if request.method == 'POST':
         form = AddForm(request.POST)
         if form.is_valid():
             a = form.cleaned_data['a']
             b = form.cleaned_data['b']
             addnum = int(a) + int(b)
-            #return HttpResponse(str(int(a) + int(b)))
             return render(request, 'reports/index.html', {'addnum': addnum})
     else:
         form = AddForm()
@@ -49,8 +47,6 @@ def usrs_in_ippool(request):
 
 def call_p3a_usrs_in_ippool(*args):
     with connection.cursor() as cursor:
-        #args = (ipnum, ipfield)
-        #cursor.callproc("p3a_usrs_in_ippool", args)
         cursor.callproc("pusrs_in_ippool_fin", args)
         rows = cursor.fetchall()
         cursor.close()

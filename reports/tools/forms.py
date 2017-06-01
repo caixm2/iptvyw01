@@ -10,10 +10,10 @@ IPLEN_CHOICES = (
 	('8B','8B'),('16B','16B'),('32B','32B'),('64B','64B'),('128B','128B')
 )
 DAY_CHOICES = (
-	('6','1天内'),('37','31天内')
+	('1','1天内'),('31','31天内')
 )
 PLAT_CHOICES = (
-	('HW','华为'),('ZTE','中兴')
+	('HW','华为'),('zte','中兴')
 )
 
 class UsrInPoolForm(forms.Form):
